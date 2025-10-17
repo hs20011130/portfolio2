@@ -1,0 +1,248 @@
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -65px; bottom: 15%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+	
+#content{ width:100%; margin:0;background:rgba(0,0,0,.9);position: relative;  }
+#content h2{position: absolute; top: -500px;
+width: 100%; text-align: center; font-size: 4em; color: #f00;}
+
+
+
+/* card(맨위) */
+
+
+.site__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.site__info {
+  clear: both;
+  display: block;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  text-align: center;
+}
+
+.grid {
+  float: none;
+  width: 100%;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-bottom: 0.4em;
+}
+@media screen and (min-width: 40.063em) {
+  .grid {
+    float: left;
+    width: 33.333%;
+  }
+}
+
+.card__image {
+  width: 100%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  min-height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+.card__image > img {
+   width: 100%;
+  display: block;
+  margin-bottom: 0;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.card__image:hover > img {
+   width: 100%;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.card__overlay .card__title{
+  color: #fff; font-weight: 500;
+  display: inline-block;
+  font-family: "Montserrat";
+  font-size: 1.2em;
+  line-height: 1.7rem;
+  margin-bottom: 0.75em;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.card__title:hover {
+  color: #000000(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.card__meta a{color: #fff;}
+
+.card__overlay {
+  content: "";
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+ 
+.card__overlay--red {
+  background-image: linear-gradient(to bottom, rgba(92, 107, 192, 0.1), rgba(76, 37, 2, 0.7));
+  z-index: 2;
+}
+
+.card__overlay-content {
+  position: absolute;
+  bottom: 0;
+  padding: 1.5em;
+  z-index: 3;
+}
+
+.card__meta {
+    color: #fff;
+  margin: 0;
+  margin-right: -1em;
+  margin-bottom: 0.75em;
+}
+.card__meta.card__meta--last {
+    color: #fff;
+  margin-bottom: 0;
+}
+.card__meta li {
+  color: #fff;
+  display: inline;
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-right: 1em;
+  font-size: 0.85em;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+
+
+/* 비디오 팝업 */
+
+.clip{overflow: hidden; width: 70%; margin: 0 auto; padding-bottom: 100px;}
+.clip .tit
+{font-size:2.5rem; color: #eb2431; position: relative; text-align: center; margin-bottom: 50px;
+margin-top: 50px;}
+
+.clip .tit span
+{font-size:1.2rem; color: #ffffff; }
+
+
+
+.clip_part {
+    width:50%; float: left;
+}
+
+.clip_part .contentArea {
+    position: relative;
+    width: 96%;
+    margin: 10px auto
+}
+
+.imgPart {
+    position: relative;
+    cursor: pointer;
+    border: 5px solid red;
+}
+
+.clip_part .contentArea .imgPart .popup-youtube>img {
+    width: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3)
+}
+
+.clip_part .playBnt {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 110px;
+    height: 110px;
+    margin: -55px 0 0 -55px;
+    border-radius: 94px;
+    background: rgba(0,0,0,.6);
+    transition: all .5s;
+}
+
+.clip_part .imgPart:hover .playBnt {
+    background: rgba(255,0,0,.6)
+}
+
+.clip_part .playBnt img {
+    position: relative;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    margin: -32px 0 0 -20px    
+}
+
+
+@media screen and (max-width:1200px) {
+.clip{width: 90%;}
+}
+
+@media screen and (max-width:1024px) {
+.card__overlay .card__title{font-size: 1.1rem;line-height: 1.6rem;}
+}
+
+@media screen and (max-width:786px) {
+     .clip .tit span{display: block;}
+    .clip_part {
+    width:auto; float:none;}
+}
+
+@media screen and (max-width:640px) {
+    .subTitle {
+        font-size: 1.5em
+    }
+    .card__overlay .card__title{font-size: 1rem;line-height: 1.5rem;}
+    .site__wrapper .grid:nth-of-type(1){display: none;}
+}
+
+@media screen and (max-width:480px) {
+    .clip_part .playBnt {
+        width: 95px;
+        height: 95px;
+        margin: -48px 0 0 -48px
+    }
+    .clip_part .contentArea {
+        width: auto
+    }
+}

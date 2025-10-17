@@ -1,0 +1,82 @@
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+#imgBG{
+	position:fixed; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+}
+
+.down{display: block; font-size: 20px; position: absolute; 
+	 left:50%; margin-left: -65px; bottom: 15%;
+	animation:ani 1s infinite  alternate;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+	
+#content{ width:100%; margin:0;background:rgba(0,0,0,.7);position: relative; }
+#content h2{position: absolute; top: -500px;
+width: 100%; text-align: center; font-size: 4em; color: #f00;}
+
+#content .title0{width: 90%; margin: 0 auto; overflow: hidden;}
+#content .title0 h3{ font-size: 3rem; color: #f00; margin: 100px 0 30px;}
+#content .title0 p:nth-of-type(1){font-size: 1.2rem; font-weight: 600; margin-bottom: 30px; color: #fff;}
+#content .title0 p:nth-of-type(2){font-size: 1.02rem; margin-bottom: 50px; color: #fff; text-align: justify;}
+
+#content .sec1{width: 90%; margin: 0 auto 100px; overflow: hidden;}
+#content .sec1 h4{font-size: 2rem; color: #f00; margin-bottom: 30px;}
+#content .sec1 ul{display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px 20px;}
+#content .sec1 ul li{position: relative; overflow: hidden;}
+#content .sec1 ul li img{width: 100%; }
+#content .sec1 ul li dl{width: 100%; height: 100%; background: red; position: absolute; left:0; top:100%;padding: 30px; transition: all .5s;}
+#content .sec1 ul li:hover dl{top:0}
+#content .sec1 ul li dt{font-size: 1.5rem; font-weight: 700; color: #fff; margin: 30% 0 20px;}
+#content .sec1 ul li dd{color: #fff;}
+
+#content .sec3{width: 90%; margin: 0 auto 100px; overflow: hidden;}
+#content .sec3 h4{font-size: 2rem; color: #f00; margin-bottom: 0;}
+#content .sec3 li{position: relative; margin-bottom: 50px; padding-top: 200px;}
+#content .sec3 li img{position: absolute; right: 0; bottom: 0; width: 30%;}
+#content .sec3 dl{background: red; color: #fff; padding: 200px 50px 100px; overflow: hidden;}
+#content .sec3 dt{font-size: 1.7rem; font-weight: 600; margin-bottom: 30px;}
+#content .sec3 dd{width: 400px; text-align: justify; line-height: 1.6rem;}
+#content .sec3 li:nth-of-type(2) img{left:0; width: 23%;}
+#content .sec3 li:nth-of-type(2){text-align: right;}
+#content .sec3 li:nth-of-type(2) dd{float: right;}
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+ 
+
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+   #content .sec1 ul{grid-template-columns: repeat(2, 1fr);}
+
+   #content .sec3 li{margin-bottom: 30px;}
+   #content .sec3 li{position: relative; margin-bottom: 50px; padding-top: 30px;}
+   #content .sec3 dl{padding: 100px 50px 50px; overflow: hidden;}
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px){
+	#content .sec1 ul li dl{position: static; padding: 12px;}
+   #content .sec1 ul li dt{margin:10px 0; font-size: 1.1rem;}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+   #content .sec3 dl{padding: 80px 30px 30px; overflow: hidden;}
+   #content .sec3 dd{width: 60%;line-height: 1.5rem;}
+}
+
+
+

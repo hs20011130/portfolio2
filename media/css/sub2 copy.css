@@ -1,0 +1,16 @@
+
+
+#content .sec1 .box{width: 100%; margin: 0 auto;position: relative; overflow: hidden;}
+#content .sec1 .box img{width: 100%; height: 100%; object-fit: cover; object-position: center;}
+#content .sec1 .box dl{position: absolute; top:100%; left:0; width: 100%; height: 100%;
+        background: rgba(255,0,0,.8); transition: all .5s ease-out; padding: 80px 40px;}
+#content .sec1 .box dt{font-size: 1.5rem; font-weight: 700; margin-bottom: 30px;}
+#content .sec1 .box dd{line-height: 2rem; text-align: justify;}
+#content .sec1 .box:hover dl{top:40%; color: #fff;}
+#content .sec1 .swiper-container{padding-bottom: 30px;}
+#content .sec1 .swiper-slide{width: 100%; border-radius: 30px; overflow: hidden;}
+#content .sec1 .swiper-button-next,#content .sec2 .swiper-button-prev{color: red;}
+#content .sec1 .swiper-pagination-bullet{background: #fff; opacity: .4;}
+#content .sec1 .swiper-pagination-bullet-active{background: red; opacity: 1;}
+
+
