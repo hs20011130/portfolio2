@@ -1,0 +1,233 @@
+/* sub1_1 콘텐츠 */
+
+/* 비주얼 영역 높이 메인하고 다름 */
+.visual{  width: 100%;
+    height: 200px; }
+
+    #content {
+        width: 90%; margin: 0 auto 80px; position: relative;
+        max-width: 640px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333;
+      }
+      
+
+      /* 인사말 본문 영역 */
+      .content_top1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+      }
+      
+      .photo_box {
+        position: relative;
+        width: 182px;
+        flex-shrink: 0;
+      }
+      
+      .photo_box img {
+        top: 40px;
+        width: 100%;
+        display: block;
+        position: relative;
+        z-index: 2;
+        border-radius: 4px;
+      }
+      
+      .bg_box {
+        position: absolute;
+        top:100px;
+        left: 0;
+        width: 183px;
+        height: 227px;
+        background-color: #7450C1;
+        z-index: 1;
+        opacity: 0.9;
+        border-radius: 0;
+       flex: 1;
+        max-width: 600px;
+        text-align: left; /* 텍스트 자체는 왼쪽 정렬 유지 */
+      }
+      
+
+      
+      .content_top1 .greeting_text h3 {
+        margin-top: 80px;
+        font-size: 15px;
+        font-weight: 700;
+        color: #7450C1;
+        margin-bottom: 10px;
+        /* text-transform: uppercase; */
+        letter-spacing: 2px; /*글자 간 간격*/
+         flex: 1;
+        max-width: 600px;
+        margin-left: 30px;
+      }
+      
+      .content_top1 .greeting_text strong {
+        display: block;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+       flex: 1;
+        max-width: 600px;
+        text-align: left; /* 텍스트 자체는 왼쪽 정렬 유지 */
+        margin-left: 30px;
+    }
+
+      
+      .content_top1 .greeting_text h2 span{color: #7450C1;font-weight: 700;}
+      
+      .content_top1 .greeting_text p {
+        line-height: 1.6;
+        color: #555;
+         flex: 1;
+        max-width: 600px;
+        text-align: left; /* 텍스트 자체는 왼쪽 정렬 유지 */
+        margin-left:30px;
+      }
+      
+      .content_middle p {
+        color: #7450C1;
+          font-size: 1.2em;
+        margin-bottom: 50px;
+        margin-left: 30px;
+      }
+      
+      .content_middle p span {
+      font-weight: 700;
+      }
+      
+      
+      
+      /* 아이콘 */
+      
+      .icon_features ul {
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 40px; /* 아이콘 박스 간 간격 */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+      }
+      
+      .icon_features li {
+        background: #fff; /* 흰색 배경 */
+        border-radius: 12px; /* 둥근 모서리 */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 은은한 그림자 */
+        padding: 30px 40px; /* 안쪽 여백 */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 140px; /* 박스 너비 */
+        cursor: pointer; /* 마우스 커서 포인터 */
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .icon_features li:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* 호버 시 그림자 강조 */
+      }
+      
+      .icon_features .material-symbols-outlined {
+        font-size: 64px; /* 아이콘 크기 */
+        color: #7450C1; /* 보라색 */
+        margin-bottom: 15px;
+      }
+      
+      .icon_features li strong {
+        display: block;
+        font-size: 1rem;
+        color: #7450C1;
+        text-align: center;
+        margin: 0;
+        font-weight: 600;
+      }
+      
+      /* ---- */
+      /* 아이콘 특징 섹션 */
+      .icon_features ul {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        list-style: none;
+        padding: 0;
+        margin: 0 0 80px 0;
+      }
+      
+      .icon_features li {margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #7450C1;
+        font-weight: 600;
+      }
+      
+      .icon_features .material-symbols-outlined {
+        font-size: 70px;
+        margin-bottom: 10px;
+      }
+      
+      /* 키워드 섹션 */
+      .keyword_sections .keyword {
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+        gap: 40px;
+      }
+      
+      .keyword_sections .keyword:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      
+      .keyword_sections img {
+        width: 400px;
+        border-radius: 8px;
+      }
+      
+      .keyword_text_wrapper {
+        display: flex;
+        align-items: center;
+      }
+      
+      .number_box {
+        /* margin-top: -350px; */
+        margin-top: -330px;
+        background-color: #7450C1;
+        color: white;
+        font-weight: 700;
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-right: 20px;
+        flex-shrink: 0;
+      }
+      
+      .keyword_text
+      {margin-top:  -100px;}
+
+      .keyword_text h3 {
+        font-size: 1.5rem;
+        color: #7450C1;
+        margin-bottom: 15px;
+        line-height: 1.4;
+      }
+      
+      .keyword_text p {
+        line-height: 1.6;
+        color: #333;
+      }
+      
+      
+      
+
+    
+

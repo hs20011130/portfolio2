@@ -1,0 +1,76 @@
+/* index css */
+
+/* 비주얼영역 */
+.visual{ }
+.visual .swiper1{
+    width: 100%;
+    height: auto; 
+    /* 스와이퍼의 높이값이 유동이면 auto 값을 고정이면 px값을 주어야한다 */
+}
+.visual .swiper1 .swiper-slide{
+    text-align: center;
+}
+.visual .swiper1 .swiper-slide img{width: 100%;}
+.visual .swiper1 .swiper-slide p{position: absolute;
+      font-size: 27px; color: #fff; left:0; width: 100%;
+      text-align: center; top: 45%; 
+    margin-top: 10px;}
+
+.visual .swiper1 .swiper-slide p span{position: absolute;
+        font-size: 27px; color: #fff; font-weight: bold;
+        width: 100%; top: 45%; text-align: center; }
+
+/* 스와이퍼 공통 */
+.swiper-button-next, .swiper-button-prev{color: #6C4AB6;}
+.swiper-pagination-bullet{background: #fff; opacity: .4;}
+.swiper-pagination-bullet-active{background: #6C4AB6; opacity: 1;}
+
+/* miryangart */
+.miryangart{margin-bottom: 80px; display: flex; justify-content: center; gap: 30px;}
+.miryangart h3{font-size: 1.5rem;}
+.miryangart a{margin: 30px 0 0 60px;}
+.miryangart a img{width: 50px; height: 50px;}
+.miryangart .right{border-left: 1px solid #999; padding-left: 30px;}
+.miryangart .right img{width:150px ; margin-bottom: 15px;} 
+.miryangart .right p{font-size: 1.15rem;}
+
+/* cultural */
+.cultural{width: 90%; margin: 0 auto 80px; position: relative;}
+.cultural h3{font-size: 1.5rem; margin-bottom: 30px;}
+.cultural .swiper2{padding-bottom: 50px}
+.cultural .swiper2 .swiper-pagination-bullet{background: #6C4AB6; opacity: .4;}
+.cultural .swiper2 .swiper-pagination-bullet-active{background: #6C4AB6; opacity: 1;}
+.cultural .swiper2 img{width: 100%; margin-bottom: 15px;}
+.cultural .swiper2 dl{margin-bottom: 10px;}
+.cultural .swiper2 dt{font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;}
+.cultural .swiper2 li a{background: #6C4AB6; color: #fff ;padding: 5px 15px; display: inline-block; border-radius: 15px;}
+.cultural .more{position: absolute; right: 0; top: 10px; font-size: 1.1rem;}
+
+/* educaiton */
+.educaiton{width: 90%; margin: 0 auto 80px; position: relative;}
+.educaiton h3{font-size: 1.5rem; margin-bottom: 30px;}
+.educaiton .swiper3{padding-bottom: 50px}
+.educaiton ul li{display: flex; align-items: flex-end; justify-content:space-between; margin-bottom: 40px;}
+.educaiton ul li:last-child{margin-bottom: 0;}
+.educaiton ul li span{display: block; width: 50%;}
+.educaiton ul li span img{width: 100%;}
+.educaiton ul li div{width: 40%;}
+.educaiton ul li dl{margin-bottom: 10px;}
+.educaiton ul li dt{font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;}
+.educaiton ul li a{background: #6C4AB6; color: #fff ;padding: 5px 15px; display: inline-block; border-radius: 15px;}
+.educaiton .swiper3 .swiper-pagination-bullet{background: #6C4AB6; opacity: .4;}
+.educaiton .swiper3 .swiper-pagination-bullet-active{background: #6C4AB6;; opacity: 1;}
+.educaiton .more{position: absolute; right: 0; top: 10px; font-size: 1.1rem;}
+
+/* tour */
+
+.tour{width: 90%; margin: 0 auto 80px; position: relative;}
+.tour h3{font-size: 1.5rem; margin-bottom: 30px;}
+.tour .swiper4{padding-bottom: 50px}
+.tour .swiper4 li img{width: 100%; margin-bottom: 20px;}
+.tour .swiper4 ul li dl{margin-bottom: 10px;}
+.tour .swiper4  ul li dt{font-size: 1.3rem; font-weight: 600; margin-bottom: 10px;}
+.tour .swiper4  ul li a{background: #6C4AB6; color: #fff ;padding: 5px 15px; display: inline-block; border-radius: 15px;}
+.tour .swiper4 .swiper-pagination-bullet{background: #6C4AB6; opacity: .4;}
+.tour .swiper4 .swiper-pagination-bullet-active{background: #6C4AB6;; opacity: 1;}
+.tour .more{position: absolute; right: 0; top: 10px; font-size: 1.1rem;}
