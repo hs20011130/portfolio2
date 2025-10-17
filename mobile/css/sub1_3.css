@@ -1,0 +1,51 @@
+/* sub1_1 콘텐츠 */
+
+/* 비주얼 영역 높이 메인하고 다름 */
+.visual{  width: 100%;
+    height: 200px; position: relative; }
+.visual span{font-size:2rem; text-align: center; position: absolute;
+      width: 100%; left:0; top: 80px; font-weight: 400; color: #fff;}
+.visual img{object-fit: cover; object-position: center bottom;
+    width: 100%; height: 200px;}
+    /*상단 카테고리*/
+    #content {
+        margin: 0 auto; position: relative;
+        box-sizing: border-box;
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #333; padding-bottom: 0;
+      }
+      #content .title_area{margin-bottom: 50px;}
+      #content .title_area h2{font-size:2.5rem ; text-align: center; margin-bottom: 20px;}
+      #content .title_area p{font-size: 1.2rem;line-height: 1.6rem; text-align: center;}
+
+      /* 인사말 본문 영역 */
+      .content_top1 h3 {
+        font-size: 15px; text-align: right;
+        font-weight: 700;
+        color: #7450C1;
+        margin-bottom: 10px;
+        text-transform: uppercase; 
+        letter-spacing: 2px; /*글자 간 간격*/
+         flex: 1;
+        max-width: 600px;
+      }
+      
+      .content_top1 strong {
+        display: block; text-align: right;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+       
+    }
+      
+    /* 찾아오시는길 내용 콘텐츠 */
+#content .content_area{
+  width:100%; margin: 0 auto;
+  padding-bottom: 50px; 
+}
+#content #map1 , #content #map2{width:100%;box-sizing: border-box; border: 1px solid #999;
+     height: 300px; margin-bottom: 30px;} 
+#content dl{margin-bottom: 50px;}
+#content dt{font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color:var(--font-color-main); line-height: 2.5rem;}
+#content dt span{font-size: 1.3rem; font-weight: 400; padding-right: 30px; display: block; margin-left: 25px;}
+#content dd{line-height: 2.3rem; font-size: 1.1rem; padding-left: 30px;}
+#content dd strong{color:var(--font-color-main); padding-right: 15px;}
