@@ -1,0 +1,39 @@
+/* 고객의소리 내용 콘텐츠 */
+#content .content_area{position: relative;width: 1400px; margin: 0 auto;}
+#content .content_area .headset{width: 1000px; margin: 30px auto; text-align: center;}
+#content .content_area .headset img{width: 1000px;}
+#content .title_box1 h3{font-size: 2rem; font-weight: 800; color: #9C85CE;
+   margin-bottom: 15px;  display: block; margin-left: 500px;padding-top: 100px;}
+   /* #content .title_box1 h3 p{font-size: 8rem; font-weight: 800; color: #9C85CE;
+    display: block; text-align: left; margin-left: -50px; margin-bottom: -10px;} */
+   #content .title_box1 h3 span{font-size: 3rem; font-weight: 800; color: #6C4AB6;
+    margin-bottom: 15px; display: block;  }
+   #content .title_box2{font-size: 1.5rem; font-weight: 500; margin-top: 50px;
+    margin-bottom: 100px; margin-left: 500px;}
+    #content .headset2{position: absolute; left:200px; top:850px}
+#content .headset2 span{font-size: 10rem; color: #6C4AB6; }
+#content .content_area{
+    width: 1400px; margin: 0 auto;
+    padding-bottom: 150px;
+}
+#content .email_box{width: 1000px; margin: 0 auto; border: 1px solid #ccc;
+padding: 30px; box-sizing: border-box;}
+#content .email_box div{padding: 20px;}
+#content .email_box label{font-size: 1.3rem; font-weight: 700;
+font-weight: 700; margin-bottom: 15px; display: block;}
+#content .email_box input,#content .email_box select,#content .email_box textarea
+{padding: 15px 5%; width: 90%; font-size: 1.5rem; border: 0; background: #fff;
+color: #6C4AB6; border-radius: 15px; outline: none; box-shadow: 1px 1px 10px 1px rgba(0,0,0,.1);
+transition: all .5s ease-out;}
+#content .email_box input:focus,
+#content .email_box textarea:focus{box-shadow: 1px 1px 10px 1px rgba(0,0,0,.4);
+transform: scale(1.03); background: #6C4AB6;}
+
+#content .email_box textarea{height: 200px;}
+#content .email_box button{padding: 15px 50px; background: #6C4AB6;
+color: #fff; font-size: 1.2rem; border-radius: 15px; border: 0;margin: 30px auto; display: block; cursor: pointer;}
+#content .email_info{margin-top: 50px;}
+#content .email_info dl{margin-bottom: 30px;}
+#content .email_info dt{font-size: 1.25rem; font-weight: 600; margin-bottom: 15px;}
+#content .email_info p{margin: 20px;}
+#content .email_info dd{line-height: 1.8rem; font-size: 1.1rem;}

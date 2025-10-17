@@ -1,0 +1,17 @@
+#content{width: 1400px; margin: 0 auto;}
+
+.faq{width:1200px;margin: 0 auto 150px;  position: relative; font-size: 1.2rem;}  
+.faq .hgroup{position:absolute; top: -50px; right:0}  
+.faq .hgroup .all{position:absolute; top:5px; right:10px;  font-size: 20px; }  
+
+.faq .q{border-top:1px solid #ddd; border-radius: 20px; overflow: hidden; }  
+.faq .q a.trigger{display:block;padding:20px 15px;background:#d4a3f5;color:#333;font-weight: 600;}  
+.faq .hide .q a.trigger{background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{background:#d4a3f5;color:#000}  
+.faq .a{padding:10px 15px;line-height:1.5em; text-align: justify; overflow:hidden; display: none;} 
+
+.hidden{display: block; position: absolute; left:-1000%; top:0; width: 1px;
+        height: 1px; overflow: hidden; color: #fff;}
+

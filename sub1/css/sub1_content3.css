@@ -1,0 +1,216 @@
+/* 그룹개요 내용 콘텐츠 */
+#content .content_area{
+    width: 1400px; margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+/* 비전 */
+.content_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content_area img {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* 미션 */
+.content_area2 {
+  width: 1400px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.content_area2 div{width:900px;
+       display: flex; flex-direction: column;}
+.content_area2 .vision{ margin-bottom: 80px;}
+.content_area2 .misson{align-items: flex-end; margin-left: 500px;}
+.content_area2 .misson p{text-align: right;}
+.content_area2 .misson span{padding-right: 400px;}
+
+.content_area2 h3 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #6a4dcf;
+  margin-bottom: 20px;
+}
+
+.content_area2 ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.content_area2 li {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a4dcf;
+}
+
+.content_area2 li:nth-child(2) {
+  background-color: white;
+  border: 1px solid #6a4dcf;
+  color: #6a4dcf;
+}
+
+.content_area2 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.content_area2 .title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.content_area2 .title-row .ampersand {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #6a4dcf;
+}
+
+.content_area2 .title-row .mission {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #6a4dcf;
+}
+
+
+
+/* management photo */
+.management_photo h3
+{margin-left: 500px;
+    margin-top:200px;
+    font-size:  3rem;
+color: #6a4dcf;}
+
+.management_photo img
+{margin-top: 50px;
+margin-bottom: 100px;
+margin-left: 500px;}
+
+.management_photo p
+{margin-top: 20px;
+text-align: center;
+ font-size: 1.5rem;
+  line-height: 1.6;
+  color: #6a4dcf;
+margin-bottom: 200px;}
+
+
+
+/* management keyword */
+/* 기본 폰트 및 전체 설정 */
+
+
+/* 카드 컨테이너 */
+.management_keyword {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto 0;
+  padding: 0 20px 0;
+  background: transparent; /* 배경 없애기 */
+  z-index: 10;
+}
+
+/* 카드 리스트 가로 배치 */
+.management_keyword ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-width: 1200px;
+  flex-wrap: nowrap;
+}
+
+/* 카드 스타일 */
+.management_keyword li {
+  width: 180px;
+  min-height: 220px;
+  background: #fff;
+  color: #6a4dcf;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 30px 20px 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+
+  /* 카드 하단을 보라색 영역과 겹치도록 살짝 올리기 */
+  margin-bottom: -60px; /* 필요에 따라 조절 가능 */
+}
+
+/* 아이콘 크기 및 색상 */
+.management_keyword li .material-symbols-outlined {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #6a4dcf;
+}
+
+/* 줄바꿈 텍스트 정렬 */
+.management_keyword li br {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* 보라색 영역 (MANAGEMENT OBJECTIVES) */
+.management_main {
+  background-color: #6a4dcf;
+  color: #fff;
+  width: 100vw;           /* 화면 전체 너비 */
+  max-width: none;        /* 최대 너비 제한 해제 */
+  margin: 0;              /* 중앙 정렬 해제 */
+  padding: 120px 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  border-radius: 0 0 16px 16px; /* 좌우 둥근 모서리 유지 */
+  position: relative;
+  z-index: 5;
+}
+
+/* 제목 스타일 */
+.management_main h3 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0;
+  width: 40%;
+  text-align: center;
+  margin-left: 150px;
+  white-space: pre-line;
+}
+
+/* 문단 스타일 */
+.management_main p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  width: 55%;
+  margin-top: -30px;
+  margin-left: 1100px;
+  color: #f0f0f0;
+}

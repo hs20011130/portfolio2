@@ -1,0 +1,12 @@
+/* 찾아오시는길 내용 콘텐츠 */
+#content .content_area{
+    width: 1400px; margin: 0 auto;
+    padding-bottom: 150px;
+}
+#content #map1 , #content #map2{width: 1200px; margin: 0 auto;
+       height: 600px; margin-bottom: 50px;} 
+#content dl{margin-bottom: 50px;margin-left: 400px;}
+#content dt{font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color:var(--font-color-main) ;}
+#content dt span{font-size: 1.3rem; font-weight: 400; padding-right: 30px;}
+#content dd{line-height: 2.3rem; font-size: 1.1rem; padding-left: 30px;}
+#content dd strong{color:var(--font-color-main); padding-right: 15px;}

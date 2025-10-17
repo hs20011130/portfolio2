@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+/* 메인 비주얼 영역 */
+.visual{width: 2000px; height: 1050px; position: relative;left: 50%; top: 0;
+ transform: translateX(-50%);} 
+
+.gallery{position:relative;left:0; top:0; overflow:hidden; width:2000px; height:1050px;}
+.gallery li{display:none; position:absolute; left:0; top:0}
+
+/* .gallery img{animation: ani 30s linear infinite;}
+@keyframes ani {
+    from {transform: scale(1);}
+    to {transform: scale(1.2);}
+} */
+
+.gallery li span{position: absolute; left: 450px; top: 210px; opacity: 0; 
+    font-size: 50px; color: #fff;  }
+
+/* .gallery .link1 span{ left:  100px; top: 300px;} */
+
+.dock{width:400px; position:absolute; left:50%; bottom:200px;  margin-left: 200px;
+      display: flex; gap:25px; align-items: center;}
+
+.dock .mbutton{  cursor:pointer; 
+    display:block;  width:15px; height:15px;
+   border-radius:50%; border: 2px solid #fff;
+  transition: all .5s}
+
+.dock .ps{  margin: 3px 10px 0; cursor:pointer; 
+    display:block;  width:25px; height:25px;
+    }
+.dock .ps i{font-size: 25px; color: #fff;}   
+
+.visual .btn{color: #fff; display: block;font-size: 20px;cursor:pointer; }
+.visual .btnLeft{}
+.visual .btnRight{ margin-right: 20px;}    
+
+.visual .text-area{position: absolute; left:300px; top: 500px; color: #fff;}
+.visual .text-area p{font-size: 1.4rem; line-height: 4rem; margin-bottom: 50px;}
+.visual .text-area p span{font-size: 4rem; font-weight: bold; display: block;}
+.visual .text-area>span{display: block; display: flex; gap:10px; align-items: center; font-size:1.2rem ; margin-bottom: 15px;}
+.visual .text-area button{background: #6C4AB6; border-radius: 20px; color: #fff; font-weight: bold; padding: 5px 15px; border: 0;}
+
+
+/* 본문 콘텐트 영역 */
+#content{width: 100%;}
+
+
+
+
+
+/* 주요 프로그램 */
+#content .program{width: 100%; padding: 100px 0;}
+#content .program .program_inner{width: 1400px; margin: 0 auto; }
+#content .program h3{font-size:var(--font-size-h3); color:var(--font-color-main) ; text-align: center; margin-bottom: 20px;}
+#content .program h3 span{font-size: 2rem; margin-left: 30px;}
+#content .program .p1{font-size: 1.3rem; text-align: center; margin-bottom: 50px;}
+#content .program .program_container{display: flex; justify-content: center;gap: 120px;}
+#content .program .program_container .program_left{width: 630px; position: relative;}
+#content .program .program_container .program_right{width: 630px;  position: relative;}
+#content .program .program_container h4{font-size:1.5rem ; text-align: center;margin: 30px 0 50px; color: var(--font-color-main); position: relative;}
+#content .program .program_container h4::after{content: ''; display: block; width: 100px; height: 4px; 
+                   background:var(--font-color-main) ; position: absolute; bottom: -10px; left: 265px;}
+#content .program .program_container ul{display: flex; justify-content:space-between; }
+#content .program .program_container ul li{width: 307px; height:435px; position: relative; overflow: hidden;}
+#content .program .program_container ul li dl{width: 307px; height:435px; position: absolute; left:0; top:435px;background: rgba(0,0,0,.7); transition: all .5s ease-out;}
+#content .program .program_container ul li img{transition: all .5s ease-out;}
+#content .program .program_container ul li:hover img{transform: scale(1.1); filter:grayscale(100%)}
+#content .program .program_container ul li:hover dl{top: 0;}
+#content .program .program_container ul li dt{font-size: 1.2rem; font-weight:500; color: #fff; text-align: center;
+             margin:150px 0 40px 0 ;}
+#content .program .program_container ul li dd{color: #fff; margin-left: 15px; line-height: 2rem;}
+#content .program .program_container .more{position: absolute; right:100px; top:35px; text-decoration: underline;}
+
+
+
+
+
+
+
+/* quick menu */
+#content .quick_menu{width: 100%; padding: 100px 0 0;}
+#content .quick_menu h3{font-size:var(--font-size-h3); color:var(--font-color-main) ; text-align: center; margin-bottom: 50px;}
+#content .quick_menu h3 span{font-size: 2rem; margin-left: 30px;}
+#content .quick_menu .quick1{background: #d2d1f0; padding: 80px 0;}
+#content .quick_menu .quick1 ul{display: flex; justify-content: center; gap: 70px;}
+#content .quick_menu .quick2{background: #6C4AB6;padding: 80px 0;}
+#content .quick_menu .quick2 ul{display: flex; justify-content: center; gap: 70px;}
+
+#content .quick_menu strong{display: block; width:200px; height: 200px; background:#fff; border-radius: 50%;
+                    display: flex; justify-content: center; align-items: center; transition: all .5s ease-out;}
+#content .quick_menu li:hover strong{background: #4f5fa5; box-shadow: 5px 5px 15px 1px rgba(0,0,0,.4); transform: scale(1.2);} 
+#content .quick_menu strong span{font-size: 6rem; color: blueviolet; transition: all .5s ease-out;}
+#content .quick_menu li:hover span{color: #fff;}
+#content .quick_menu h4{font-size: 1.5rem; color: #472362; text-align: center; margin-top: 30px;}
+
+
+
+
+
+
+/* 재단 소개 */
+#content .foundation{width: 100%;  position: relative;}
+#content .foundation .foundation_head{position: absolute; top:100px; left:0; width: 100%; z-index: 10;}
+#content .foundation h3{font-size:var(--font-size-h3); color:var(--font-color-main) ; text-align: center; margin-bottom: 30px; }
+#content .foundation h3 span{font-size: 2rem; margin-left: 30px;}
+#content .foundation .p1 {font-size: 1.5rem; color:#fff; text-align:center; width: 650px; margin: 0 auto;  }
+#content .foundation1{background: url(../main_images/foundation_1jpg.jpg) center;
+                      background-size: cover;
+                      width: 2000px; height: 700px; color: #fff;
+                     position: relative; left: 50%; top: 0; transform: translateX(-50%);}
+#content .foundation1 .foundation1_box{width: 650px;
+              position: absolute; right:340px; bottom: 80px;
+              text-align: right;}
+#content .foundation1 h4 {font-size:var(--font-size-h3); color:white ; font-weight: 400; margin-bottom: 30px;}
+#content .foundation1 ul{display: flex; justify-content: space-between; margin-bottom: 20px;}
+#content .foundation1 ul li a{color: #fff;padding:10px 15px; border: 1px solid #fff;
+           border-radius: 30px;}
+
+#content .foundation2{background: url(../main_images/foundation_2.jpg) center;
+                background-size: cover;
+                width: 2000px; height: 700px; color: #fff;
+                position: relative; left: 50%; top: 0; transform: translateX(-50%);}
+#content .foundation2 .foundation2_box{width: 650px; 
+                position: absolute; left:340px; bottom: 80px;}
+#content .foundation2 h4 {font-size:var(--font-size-h3); color:white ; font-weight: 400; margin-bottom: 30px; }
+#content .foundation2 ul{display: flex; gap: 30px; margin-bottom: 20px;}
+#content .foundation2 ul li a{color: #fff;padding:10px 15px; border: 1px solid #fff;
+           border-radius: 30px;}
+
+#content .foundation .more{width: 80px; height: 80px; background: #6C4AB6; border-radius: 50%;
+             display: flex; justify-content: center; align-items: center;
+            position: absolute; transition: all .5s;}
+#content .foundation .more:hover{background: #d2d1f0}
+#content .foundation .more span{font-size: 2.5rem; color: #fff;}
+#content .foundation1 .more{right:150px; top:10px}
+#content .foundation2 .more{left:200px; top:10px}
+
+
+
+
+
+
+
+/* 축제 관광 */
+#content .festival
+/* {width: 100%; margin: 100px 0 0; position: relative; padding-bottom: 100px;
+    background: url(../main_images/festival_5.png) right top no-repeat; } */
+{ width: 100%;margin: 100px 0 0; position: relative;padding-bottom: 100px;background:url(../main_images/festival_5.png)right top no-repeat;
+  background-position: right top; }
+
+#content .festival::after{content: ''; width: 100%; height: 600px; display: block;
+                         background: #fcf1b1; position: absolute; bottom: 0; left: 0;z-index: -1;}
+#content .festival h3{font-size:var(--font-size-h3); color:var(--font-color-main) ; text-align: center; margin-bottom:10px; }
+#content .festival h3 span{font-size: 2rem; margin-left: 30px;}
+#content .festival .p1 {font-size: 1.5rem; color:#333; text-align:center; margin-bottom: 80px;}
+#content .festival .festival_box{display: flex; justify-content: center; gap: 50px;}
+#content .festival .festival1{width:557px; position: relative;}
+#content .festival .festival2{width:557px;margin-top:200px; position: relative;}
+#content .festival h4{font-size: 1.5rem; color: #472362; margin: 15px 0;}
+#content .festival .more{position: absolute; padding: 0px 7px; border: 2px solid #472362;
+       font-size: 1.2rem; right: 0; top: 565px;}
+#content .festival ul{line-height: 2rem; font-size: 1.1rem; margin-bottom: 15px;}
+#content .festival ul li span{font-weight: bold; color: #6C4AB6;}
+#content .festival_box p{color: #472362;}
+#content .festival .text{color: red; font-size: 2.5rem; font-weight: 700;
+                position: absolute; bottom: 100px; left:50%; margin-left: -590px;}
+#content .festival img{box-shadow: 3px 3px 15px 1px rgba(0,0,0,.1);}
+
+
+
+
+
+
+/* 아리랑센터 */
+#content .arirang_center{width: 100%; background: #6C4AB6; padding: 100px 0; position: relative;}
+#content .arirang_center::after{content: ''; width: 100%; height: 350px; display: block;
+    background: #98bfb8; position: absolute; bottom: 0; left: 0;}
+#content .arirang_center h3{font-size:var(--font-size-h3); color:#fff ; text-align: center; margin-bottom:80px; }
+#content .arirang_center h3 span{font-size: 2rem; margin-left: 30px;}
+#content .arirang_center .arirang_box{width: 1400px; margin: 0 auto;
+       display: flex; justify-content: center; gap: 50px; position: relative; z-index: 10;}
+#content .arirang_center .arirang_img{width: 600px;}
+#content .arirang_center .arirang_img::after{content: ''; display: block;
+         width: 700px; height: 754px; background: url(../main_images/arirang_5.png) ;
+          background-size: cover; position: absolute; left:-300px; top:0; z-index: -1;}
+#content .arirang_center .arirang_img img{width: 100%; box-shadow: 5px 5px 10px 0 rgba(0,0,0,.2);}
+#content .arirang_center .arirang_content{width:620px ;color: #fff;}
+#content .arirang_center .arirang_content p{font-size: 1.1rem; line-height: 1.8rem; margin-bottom: 20px;}
+#content .arirang_center .arirang_content p:nth-of-type(1){font-size: 2rem;margin:100px 0 80px;line-height: 3rem; }
+#content .arirang_center .arirang_content p:nth-of-type(1) span{padding-left: 100px;}
+#content .arirang_center .arirang_content .more{color: #fff; text-align: right; margin: 30px 0 120px; text-decoration: underline;}
+#content .arirang_center .arirang_content ul{display: flex;justify-content: space-between;}
+#content .arirang_center .arirang_content ul li{border-radius: 20px; overflow: hidden;}
+
+/* 알림마당
+#content .notification{background:  #d2d1f0; padding-bottom: 80px;}
+#content .notification h3{font-size:var(--font-size-h3); color:var(--font-color-main) ; text-align: left; padding: 100px;margin-left: 800px; margin-bottom: 50px;}
+#content .notification h3 span{font-size: 2rem; margin-left: 30px;}
+#content .notification span {font-size: 100px; color: #6C4AB6; margin-left: 2000px;}
+#content .notification h4{color:#6C4AB6; text-decoration: underline;margin-left: 2015px;}
+#content .notification li{font-size: 2rem;}
+----왼쪽거----
+#content .notification_22 li{color: #ffffff;padding:50px 50px; border: 1px solid #fff; 
+           border-radius: 30px;;margin-left: 500px; color: #fff;}
+
+#content .notification_22 li p{color:#6C4AB6;}
+#content .notification_22 li span{font-size: 2rem; margin-left: 500px;}
+#content .notification_22 li a{color:black;margin-left: 10px;text-align: left; text-decoration: underline;}
+-------오른쪽거----
+#content .notification_33 li{color: #fff;  padding:50px 50px; border: 1px solid #fff; 
+           border-radius: 30px;margin-right: 500px;}
+
+#content .notification_33 li p{color:#6C4AB6;margin-left: 1000px; text-align: right;}
+#content .notification_33 li span{font-size: 2rem; margin-left: 1000px; text-align: right;}
+#content .notification_33 li a{color:black;margin-left: 1000px;text-align: right; text-decoration: underline;} */
+
+
+
+
+
+
+
+/* 알림마당 섹션 전체 스타일 */
+section.notification {background: #fff; /* 하얀 배경 */ padding: 80px 40px 100px; /* 상하 여백을 좀 더 넉넉하게 */
+  max-width: 1200px; /* 섹션의 최대 너비 */margin: 0 auto; /* 섹션을 가운데 정렬 */}
+
+/* 알림마당 섹션 제목 (NOTIFICATION 알림마당) */
+section.notification h3 {font-size: 2.8rem; /* 제목 글자 크기 살짝 키움 */color: #6C4AB6; /* 제목 색상, 보라색을 조금 더 깊이 있게 */
+  font-weight: 700; /* 글자 두께를 더 두껍게 */text-align: left; /* 제목 좌측 정렬 */ margin-bottom: 50px; /* 제목 아래 여백 더 넓게 */
+  letter-spacing: -0.03em; /* 글자 간격 살짝 줄여서 세련된 느낌 */}
+
+/* 알림마당 섹션 소제목 (알림마당)
+section.notification h3 span
+/* {font-size: 1.3rem; 소제목 글자 크기 살짝 키움*/ /*margin-left: 15px; /* 소제목 왼쪽 여백 살짝 늘림 */
+  /* color: #7B68B0; 소제목 색상 조정font-weight: 500; 소제목 두께 조정} */ 
+
+  section.notification h3 span
+  {color: #6C4AB6; font-size: 2rem; margin-left: 30px; margin-left: 15px; }
+
+
+/* 카드 리스트를 담는 컨테이너 (좌우로 카드 리스트를 배치) */
+section.notification .notification-list {display: flex; /* flexbox 사용 */ justify-content: space-between; /* 좌우 리스트를 양 끝으로 배치 */
+  gap: 40px; /* 좌우 리스트 사이 간격 */flex-wrap: wrap; /* 화면이 작아지면 줄바꿈 허용 */}
+
+/* 좌측 카드 리스트 (첫번째, 두번째 카드) */
+section.notification .notification-left-list {list-style: none; /* 리스트 점 제거 */ padding: 0; /* 패딩 제거 */
+  margin: 0; /* 마진 제거 */width: 48%; /* 너비 48% (gap 포함하여 100%에 가깝게) */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 카드들을 세로로 배치 */
+  gap: 30px; /* 카드들 사이 간격 */
+}
+
+/* 우측 카드 리스트 (세번째, 네번째 카드) */
+section.notification .notification-right-list {
+  list-style: none; /* 리스트 점 제거 */
+  padding: 0; /* 패딩 제거 */
+  margin: 0; /* 마진 제거 */
+  width: 48%; /* 너비 48% */
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 카드들을 세로로 배치 */
+  gap: 30px; /* 카드들 사이 간격 */
+}
+
+/* 각 카드 아이템의 공통 스타일 */
+section.notification .notification-left-list li,
+section.notification .notification-right-list li {
+  background: #fff; /* 카드 배경색 하얀색 */
+  border-radius: 20px; /* 모서리 둥글게 */
+  border: 1px solid rgba(220, 220, 220, 0.5); /* 아주 옅은 테두리 추가 */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* 은은한 그림자 */
+  padding: 35px 45px; /* 카드 내부 여백 살짝 늘림 */
+  display: flex; /* flexbox 사용 (내용과 액션 영역 배치) */
+  justify-content: space-between; /* 내용과 액션 영역을 양 끝으로 배치 */
+  align-items: flex-start; /* 세로 상단 정렬 (아이콘/더보기 위치 조정) */
+  flex-wrap: wrap; /* 내용이 길어지면 줄바꿈 허용 */
+  transition: all 0.3s ease; /* 모든 속성 변화에 부드러운 전환 효과 추가 */
+}
+
+/* 카드 호버 효과 */
+section.notification .notification-left-list li:hover,
+section.notification .notification-right-list li:hover {
+  transform: translateY(-8px); /* 위로 살짝 떠오르는 효과 */
+  box-shadow: 0 12px 35px rgba(0,0,0,0.25); /* 호버 시 그림자 더 진하게 */
+  background-color: #6C4AB6; /* 배경색을 #6C4AB6으로 변경 */
+  border-color: #6C4AB6; /* 테두리 색상도 배경색과 동일하게 변경 */
+}
+
+/* 좌측 리스트 카드 내부 텍스트 정렬 */
+section.notification .notification-left-list li {
+  text-align: left; /* 카드 내부 텍스트 좌측 정렬 */
+}
+
+/* 우측 리스트 카드 내부 텍스트 정렬 */
+section.notification .notification-right-list li {
+  text-align: right; /* 카드 내부 텍스트 우측 정렬 */
+}
+
+/* 카드 내용 영역 (제목, 본문) */
+section.notification .notification-card-content {
+  flex: 1; /* 남은 공간을 차지하도록 */
+  min-width: 150px; /* 최소 너비 지정 */
+  padding-right: 20px; /* 액션 영역과의 간격 */
+}
+
+/* 카드 제목 */
+section.notification .notification-card-content h4 {
+  margin: 0 0 8px 0; /* 마진 조정 */
+  font-size: 1.25rem; /* 글자 크기 살짝 키움 */
+  font-weight: 600; /* 글자 두께 */
+  color: #333; /* 글자 색상 */
+  line-height: 1.3rem; /* 줄 간격 조정 */
+  transition: color 0.3s ease; /* 호버 시 색상 변화 부드럽게 */
+}
+
+/* 카드 본문 */
+section.notification .notification-card-content p {
+  margin: 0; /* 마진 제거 */
+  font-size: 1rem; /* 글자 크기 */
+  color: #555; /* 글자 색상 */
+  line-height: 1.6rem; /* 줄 간격 더 넓게 하여 가독성 높임 */
+  transition: color 0.3s ease; /* 호버 시 색상 변화 부드럽게 */
+}
+
+/* 카드 액션 영역 (아이콘, 더보기) */
+section.notification .notification-card-actions {
+  display: flex; /* flexbox 사용 */
+  flex-direction: column; /* 아이콘과 더보기를 세로로 배치 */
+  align-items: flex-end; /* 오른쪽 끝으로 정렬 */
+  gap: 10px; /* 아이콘과 더보기 사이 간격 살짝 늘림 */
+  min-width: 80px; /* 최소 너비 살짝 늘림 */
+}
+
+/* 카드 아이콘 */
+
+
+section.notification .notification-card-actions .material-symbols-outlined {
+  font-size: 3rem; /* 현재 1.6rem에서 더 키우려면 이 값을 늘려주세요! */
+  color: #6C4AB6; /* 아이콘 색상 */
+  transition: color 0.3s ease; /* 호버 시 색상 변화 부드럽게 */
+}
+
+/* 호버 시 아이콘 색상 흰색으로 변경 */
+section.notification .notification-left-list li:hover .notification-card-actions .material-symbols-outlined,
+section.notification .notification-right-list li:hover .notification-card-actions .material-symbols-outlined {
+  color: #fff; /* 모든 텍스트와 아이콘 색상을 흰색으로 변경 */
+}
+
+
+
+
+/* 카드 더보기 링크 */
+section.notification .notification-card-actions a {
+  font-size: 0.95rem; /* 링크 글자 크기 살짝 키움 */
+  color: #6C4AB6; /* 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 (더 깔끔하게) */
+  font-weight: 500; /* 글자 두께 */
+  cursor: pointer; /* 마우스 오버 시 포인터 */
+  transition: color 0.3s ease; /* 호버 시 색상 변화 부드럽게 */
+  text-decoration: underline;
+}
+
+/* 호버 시 카드 내부 텍스트, 아이콘, 링크 색상 변경 */
+section.notification .notification-left-list li:hover .notification-card-content h4,
+section.notification .notification-right-list li:hover .notification-card-content h4,
+section.notification .notification-left-list li:hover .notification-card-content p,
+section.notification .notification-right-list li:hover .notification-card-content p,
+section.notification .notification-left-list li:hover .notification-card-actions .notification-icon,
+section.notification .notification-right-list li:hover .notification-card-actions .notification-icon,
+section.notification .notification-left-list li:hover .notification-card-actions a,
+section.notification .notification-right-list li:hover .notification-card-actions a {
+  color: #fff; /* 모든 텍스트와 아이콘 색상을 흰색으로 변경 */
+}
+
+
+/* 반응형 디자인 (화면이 작아질 때) */
+@media (max-width: 768px) {
+  section.notification {
+    padding: 40px 20px; /* 모바일에서 여백 줄이기 */
+  }
+
+  section.notification h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  section.notification h3 span {
+    font-size: 1rem;
+  }
+
+  section.notification .notification-list {
+    flex-direction: column; /* 카드 리스트를 세로로 쌓기 */
+    gap: 20px; /* 리스트 사이 간격 줄이기 */
+  }
+
+  section.notification .notification-left-list,
+  section.notification .notification-right-list {
+    width: 100%; /* 너비 100%로 확장 */
+  }
+
+  /* 모바일에서는 카드 내부 텍스트를 좌측 정렬로 통일 */
+  section.notification .notification-left-list li,
+  section.notification .notification-right-list li {
+    text-align: left;
+    flex-direction: column; /* 내용과 액션 영역을 세로로 쌓기 */
+    align-items: flex-start; /* 좌측 정렬 */
+    gap: 15px; /* 내부 요소 간 간격 */
+    padding: 25px 30px; /* 모바일 카드 내부 여백 조정 */
+  }
+
+  section.notification .notification-card-content {
+    padding-right: 0; /* 모바일에서 패딩 제거 */
+  }
+
+  section.notification .notification-card-actions {
+    align-items: flex-start; /* 액션 영역도 좌측 정렬 */
+    margin-top: 10px; /* 내용 아래 여백 */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* 관련사이트 */
+/* 1. 로고 슬라이더 전체 영역 */
+.related-companies {
+  overflow: hidden; /* 넘치는 내용 숨김 */
+  padding: 40px 0; /* 위아래 여백 */
+  background: #fff; /* 배경색 */
+  display: flex; /* 내부 요소를 유연하게 배치 */
+  justify-content: center; /* 가로 중앙 정렬 */
+}
+.related-companies h2{display: none;}
+
+/* 2. 로고 슬라이더 컨테이너 */
+.logo-slider {
+  width: 100%; /* 부모 너비에 맞춤 */
+  max-width: 1200px; /* 최대 너비 제한 */
+  overflow: hidden; /* 내부에서 넘치는 내용 숨김 */
+  position: relative; /* 자식 요소 절대 위치 기준 */
+}
+
+/* 3. 로고들이 움직이는 트랙 */
+.logo-track {
+  display: flex; /* 로고들을 가로로 나열 */
+  width: 200%; /* 이미지 2세트 너비 (무한 스크롤용) */
+  animation: scroll 20s linear infinite; /* 스크롤 애니메이션 적용 */
+}
+
+/* 4. 개별 로고 이미지 */
+/* .logo-track 안에 있는 img 태그에만 적용 */
+.logo-track img {
+  width: 250px; /* 로고 이미지 너비 */
+  height: auto; /* 비율 유지 */
+  margin-right: 40px; /* 로고 사이 간격 */
+  user-select: none; /* 드래그 방지 */
+  object-fit: contain; /* 이미지 비율 유지하며 크기 조절 */
+  pointer-events: none; /* 마우스 이벤트 무시 */
+  flex-shrink: 0; /* 로고가 줄어들지 않도록 함 */
+}
+
+/* 5. 스크롤 애니메이션 */
+@keyframes scroll {
+  0% { transform: translateX(0); } /* 시작점 */
+  100% { transform: translateX(-50%); } /* 끝점 (한 세트가 넘어감) */
+}
+
+/* 6. 반응형 (화면이 작아질 때) */
+@media (max-width: 768px) {
+  .logo-track img {
+    width: 150px; /* 로고 크기 줄임 */
+    margin-right: 30px; /* 로고 간격 줄임 */
+  }
+}

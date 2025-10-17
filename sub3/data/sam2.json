@@ -1,0 +1,13 @@
+{
+    "sam": [
+        {"Name":"나를 바라보다","Edate":"2025-07-29 ~ 2025-08-16","Place":"밀양아리랑아트센터 전시실","Image":"./images/content2/product01.jpg","pop_img":"./images/content2/big1.jpg","pop_desc":"‘나'를 바라보는 시간을 가지며, 자신의 색을 찾아 자유롭게 표현하는 체험활동"},
+        {"Name":"백드롭 페인팅","Edate":"2024-10-08 ~ 2024-10-18", "Place":"밀양아리랑아트센터 전시실","Image":"./images/content2/product02.jpg","pop_img":"./images/content2/big2.jpg","pop_desc":"청소년 예술계 진입로 확장을 위한 지역작가 및 아동미술 전문강사와 함께하는 체험,창작"},
+        {"Name":"뚝딱 뚝딱 목공예 교실","Edate":"2022-09-06 ~ 2022-10-21","Place":"밀양아리랑아트센터 전수관","Image":"./images/content2/product03.jpg","pop_img":"./images/content2/big3.jpg","pop_desc":"튼튼하고 예쁜 나무 선반 만들기"},
+        {"Name":"나도 예술가!","Edate":"2022-08-21 ~ 2022-08-27","Place":"밀양아리랑아트센터 전시실","Image":"./images/content2/product04.jpg","pop_img":"./images/content2/big4.jpg","pop_desc":"라이브 퍼포먼스 체험으로 물감을 떨어뜨리거나 찍어서 큰 화면에 나무를 표현하는 예술 캠프"},
+        {"Name":"크리스마스 블럭화분","Edate":"2021-12-03 ~ 2021-12-26","Place":"밀양아리나 (꿈꾸는 예술터)","Image":"./images/content2/product05.jpg","pop_img":"./images/content2/big5.jpg","pop_desc":"3종류 (산타, 눈사람, 루돌프) 중 택 1,크리스마스 맞이 귀여운 블럭화분"},
+        {"Name":"예술로 떠나는 여행 가이드투어","Edatee":"2021-11-20 ~ 2021-11-21","Place":"밀양아리나(밀양 꿈꾸는 예술터), 밀양아리랑아트센터","Image":"./images/content2/product06.jpg","pop_img":"./images/content2/big6.jpg","pop_desc":"밀양 꿈꾸는 예술터 예술교육기획자와 청년예술가들이 가이드가 되어 성과공유회를 둘러보며 예술 여행"},
+        {"Name":"나의 악기 만들기-원목 칼림바 만들기","Edate":"2021-10-14 ~ 2021-11-19","Place":"밀양아리랑아트센터 전수관","Image":"./images/content2/product07.jpg","pop_img":"./images/content2/big7.jpg","pop_desc":"원목으로 작은 칼림바를 만드는 목공예 만들기"},
+        {"Name":"아름다운 우리집2-원목 공구함 만들기","Edate":"2021-08-19 ~ 2021-09-03","Place":"밀양아리랑 아트센터 전수관","Image":"./images/content2/product08.jpg","pop_img":"./images/content2/big8.jpg","pop_desc":"원목으로 집에서 유용하게 쓰이는 공구함 제작"},
+        {"Name":"몽당연필 요정의 과자집","Edate":"2019-12-27 ~ 2020-02-09","Place":"밀양아리랑아트센터 전시실","Image":"./images/content2/product09.jpg","pop_img":"./images/content2/big9.jpg","pop_desc":"기존의 과자를 이용해 몽당연필을 요정으로 캐릭터화하여 요정이 사는 과자집 만들기"}
+    ]
+}

@@ -1,0 +1,66 @@
+
+#content .content_area{
+    width: 1400px; margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+#content .content_area .ci_top1{width: 1000px; margin: 0 auto;}
+#content .content_area .ci_top1 h3{font-size:3rem ; margin-bottom: 30px;}
+#content .content_area .ci_top1 h3 span{font-size: 1.2rem;display: block;color:var(--font-color-main);}
+#content .content_area .ci_top1 h3 strong{color:var(--font-color-main);}
+#content .content_area .ci_top1 .ci_download{
+   display: flex; gap: 10px; justify-content: flex-end; margin-bottom: 50px;}
+#content .content_area .ci_top1 .ci_download li{width: 150px;
+  border: 1px solid #ccc; border-radius: 30px;}
+#content .content_area .ci_top1 .ci_download li:nth-of-type(1){background:var(--font-color-main) ;}
+#content .content_area .ci_top1 .ci_download li a{padding: 10px 0;
+  text-align: center; text-transform: uppercase;font-size: 1.2rem;}
+#content .content_area .ci_top1 .ci_download li:nth-of-type(1) a{color: #fff;}
+#content .content_area .ci_top1>img{margin: 0 auto 50px; display: block;}
+#content .content_area .ci_top1 p{font-size: 1.3rem; text-align: justify;
+   line-height: 2rem; margin:0 50px 100px;}
+#content .content_area .ci_top1 .logo_intro{display: flex; justify-content: center; gap: 20px; margin-bottom: 50px;}
+
+/* 키워드 */
+#content .content_area .keyword{width: 1000px; margin: 0 auto 100px;}
+#content .content_area .keyword h3{text-align: center; font-size: 2rem; color:var(--font-color-main); margin-bottom: 50px;}
+#content .content_area .keyword ul{display: flex; justify-content: center; gap:20px}
+#content .content_area .keyword ul li{width:250px; box-sizing: border-box;
+    padding:30px; border-radius: 30px; box-shadow: 3px 3px 15px 1px rgba(0,0,0,.3);
+   line-height: 2.2rem; font-size: 1.4rem; text-align: justify;}
+#content .content_area .keyword ul li span{display: block;font-size: 2.2rem; font-weight: bold; margin-bottom: 20px;}
+
+/* 이미지 콘셉트 */
+#content .content_area .image_concept{width: 1000px; margin: 0 auto 100px;}
+#content .content_area .image_concept h3{text-align: center; font-size: 2rem; color:var(--font-color-main); margin-bottom: 50px;}
+#content .content_area .image_concept ul{width: 800px; margin: 0 auto;}
+#content .content_area .image_concept li{display: flex; gap: 30px; margin-bottom: 50px; align-items: center;}
+#content .content_area .image_concept li p{font-size: 1.5rem;line-height: 3rem;}
+#content .content_area .image_concept li:nth-of-type(2) img{margin: 0 18px;}
+#content .content_area .image_concept li:nth-of-type(3) img{margin: 0 12px;}
+
+
+/* color_system */
+#content .content_area .color_system{width: 1000px; margin: 0 auto 100px;}
+#content .content_area .color_system h3{text-align: center; font-size: 2rem; color:var(--font-color-main); margin-bottom: 50px;}
+#content .content_area .color_system ul{width: 800px; margin: 80px auto 0;}
+#content .content_area .color_system ul li{margin:0 0 80px 250px ; font-size: 1.2rem; position: relative;}
+#content .content_area .color_system ul li strong{font-size: 1.8rem; font-weight: bold; display: block; margin-bottom: 20px;}
+#content .content_area .color_system ul li::before{content: '';
+  display: block; width: 120px; height: 120px; background: purple; border-radius: 30px; position: absolute; left:-180px; top:-10px}
+#content .content_area .color_system ul li:nth-of-type(2)::before{content: ''; background: red}
+#content .content_area .color_system ul li:nth-of-type(3)::before{content: ''; background: #313570}
+
+
+/* 로고마크 */
+#content .content_area .logo_mark{width: 1000px; margin: 0 auto 100px;}
+#content .content_area .logo_mark h3{text-align: center; font-size: 2rem; color:var(--font-color-main); margin-bottom: 50px;}
+#content .content_area .logo_mark ul{display: flex; gap:30px; justify-content: center; margin-bottom: 50px;}
+#content .content_area .logo_mark p{font-size: 1.3rem; line-height: 2.6rem;}
+
+/* 앰블럼 */
+#content .content_area .emblem{width: 1000px; margin: 0 auto 100px;}
+#content .content_area .emblem h3{text-align: center; font-size: 2rem; color:var(--font-color-main); margin-bottom: 50px;}
+#content .content_area .emblem ul{display: flex; gap:30px; justify-content: center;margin-bottom: 50px;}
+#content .content_area .emblem ul li span{display: block; text-align: center; font-size: 1.1rem; font-weight: bold;}
+#content .content_area .emblem p{font-size: 1.3rem; line-height: 2.6rem;}

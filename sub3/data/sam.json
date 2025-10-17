@@ -1,0 +1,13 @@
+{
+    "sam": [
+        {"Name":"내 맘대로 보는 세계명작 (10월 프로그램) 참가자 모집","Edate":"2022-10-04 ~ 2022-10-25","Place":"밀양아리랑아트센터 밀양아리랑전수관","Image":"./images/content1/product01.jpg","pop_img":"./images/content1/big1.jpg","pop_desc":"자하하디드의 건축 이해, 예술품처럼 만든 건축 드로잉, 종이와 가위를 이용한 건축 예술품 만들기 등의 다양한 예술 프로그램"},
+        {"Name":"2022 생태예술놀이교육 꼬마문화탐험대 [3기수] 모집","Edate":"2022-10-22 ~ 2022-11-12", "Place":"밀양아리랑아트센터 밀양아리랑전수관","Image":"./images/content1/product02.jpg","pop_img":"./images/content1/big2.jpg","pop_desc":"탐험대 숲 모자, 나무배지, 부채, 나만의 자연 보물 만들기 등의 활동 프로그램"},
+        {"Name":"우드버닝-창작교실(2기수)","Edate":"2022-09-16 ~ 2022-12-23","Place":"밀양아리랑아트센터 전수관","Image":"./images/content1/product03.jpg","pop_img":"./images/content1/big3.jpg","pop_desc":"장미넝쿨 및 글씨 버닝, 도약하는 말, 명암을 살린 인물그리기 등의 예술 프로그램"},
+        {"Name":"노노(老NO!) Acting Film (노노액팅필름) 2기 참여자 모집","Edate":"2022-08-17 ~ 2022-11-10","Place":"밀양아리랑아트센터 단체연습실","Image":"./images/content1/product04.jpg","pop_img":"./images/content1/big4.jpg","pop_desc":"창의적이고 건강한 나의 노년 맞이하기 프로젝트"},
+        {"Name":"노노(老NO!) Dance Film(노노댄스필름) 2기 참여자 모집","Edate":"2022-08-16 ~ 2022-11-08","Place":"밀양아리랑아트센터 단체연습실","Image":"./images/content1/product05.jpg","pop_img":"./images/content1/big5.jpg","pop_desc":"신나게 춤추면서 여유로운 시간 보내기"},
+        {"Name":"2022 「우드버닝-창작교실」 (1기수)","Edatee":"2022-05-20 ~ 2022-09-02","Place":"밀양아리랑아트센터 전수관","Image":"./images/content1/product06.jpg","pop_img":"./images/content1/big6.jpg","pop_desc":"캘리그라피, 올빼미 그림등을 활용한 우드 버닝 프로그램 "},
+        {"Name":"「노노(老NO!) Acting Film」","Edate":"2022-06-15 ~ 2022-11-09","Place":"밀양아리랑아트센터 단체연습실","Image":"./images/content1/product07.jpg","pop_img":"./images/content1/big7.jpg","pop_desc":"무대와 영상을 통한 연기적 표현과 전시감상 등의 필름 활용 프로그램"},
+        {"Name":"아이키움 배움터 똑,똑,똑 - 예술교실(1기,2기)","Edate":"2022-03-08 ~ 2022-04-26","Place":"밀양아리랑 아트센터(아리랑 전수관)","Image":"./images/content1/product08.jpg","pop_img":"./images/content1/big8.jpg","pop_desc":"아이들이 쉽게 배우고 즐기는 현대미술"},
+        {"Name":"2021 밀양문화재단 [지역 청년예술가 캠프 2차]","Edate":"2021-11-26 ~ 2021-11-27","Place":"밀양아리랑아트센터 외","Image":"./images/content1/product09.jpg","pop_img":"./images/content1/big9.jpg","pop_desc":"아이들이 쉽게 배우고 즐기는 현대미술"}
+    ]
+}
